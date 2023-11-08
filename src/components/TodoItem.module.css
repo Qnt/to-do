@@ -1,0 +1,16 @@
+.todo-item {
+  border: 1px salmon solid;
+  list-style-type: none;
+  display: flex;
+}
+
+.todo-item__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.todo-item__content p,
+h3 {
+  padding: 0.5rem;
+}
