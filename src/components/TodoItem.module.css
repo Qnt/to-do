@@ -1,7 +1,11 @@
 .todo-item {
-  border: 1px salmon solid;
   list-style-type: none;
   display: flex;
+  padding: 1rem;
+  align-items: baseline;
+  gap: 0.5rem;
+  background-color: var(--secondary);
+  border-radius: 4px;
 }
 
 .todo-item__content {
@@ -10,7 +14,6 @@
   width: 100%;
 }
 
-.todo-item__content p,
-h3 {
-  padding: 0.5rem;
+.done {
+  text-decoration: line-through;
 }

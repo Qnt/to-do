@@ -26,11 +26,11 @@ function TodoForm() {
   }
 
   return (
-    <form onSubmit={handleSumbit} className={classes.form}>
+    <form onSubmit={handleSumbit} className={classes.form} autoComplete="off">
       <div className={classes['form__inputs']}>
         <div className={classes['form__input']}>
-          <label htmlFor="name">Title</label>
-          <input id="name" type="text" ref={titleRef}></input>
+          <label htmlFor="title">Title</label>
+          <input id="title" type="text" ref={titleRef}></input>
         </div>
         <div className={classes['form__input']}>
           <label htmlFor="content">Text</label>

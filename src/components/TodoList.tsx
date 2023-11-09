@@ -7,7 +7,7 @@ function TodoList() {
   const todoCtx = useContext(TodoContext);
 
   return (
-    <ul>
+    <ul className={classes['todo-list']}>
       {todoCtx?.todos.map((todo) => (
         <TodoItem
           key={todo.id}

@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* :root {
-  font-family: 'Roboto', sans-serif;
-} */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #010404;
+    --background: #e1f9f8;
+    --primary: #6c141a;
+    --secondary: #c7f5f2;
+    --accent: #cb2530;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fbfefe;
+    --background: #061e1d;
+    --primary: #eb9399;
+    --secondary: #0a3835;
+    --accent: #da343f;
+  }
+}
 
 * {
   font-family: 'Roboto', sans-serif;
+  /* font-size: large; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text);
 }
 
 body {
   height: 100vh;
   margin: 0 auto;
+  background-color: var(--background);
 }
