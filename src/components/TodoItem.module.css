@@ -1,7 +1,7 @@
 .todo-item {
   list-style-type: none;
   display: flex;
-  padding: 1rem;
+  padding: 0.8rem;
   align-items: baseline;
   gap: 0.5rem;
   background-color: var(--secondary);
@@ -14,6 +14,20 @@
   width: 100%;
 }
 
-.done {
+.todo-item__content p {
+  white-space: pre-line;
+}
+
+.todo-item__checkbox:checked + div > * {
   text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete {
+  font-size: small;
+  opacity: 0.5;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
